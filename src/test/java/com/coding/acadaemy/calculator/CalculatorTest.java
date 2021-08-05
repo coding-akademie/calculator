@@ -9,14 +9,23 @@ public class CalculatorTest {
 
     @Test
     public void shouldAddIntegers(){
-
     // given
     Calculator calculator = new Calculator();
-
     // when
     int result = calculator.add(2, 3);
-
     //then
     assertEquals(5, result);
     }
+
+    @Test
+    public void shouldMultiplyIntegers(){
+        // given
+        Calculator calculator = new Calculator();
+        // when
+        int result = calculator.multiply(2, 3);
+        //then
+        assertEquals(6, result);
+    }
+
+
 }
